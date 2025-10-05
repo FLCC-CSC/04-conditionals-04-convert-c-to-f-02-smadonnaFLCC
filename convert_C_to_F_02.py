@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Salvatore Madonna
+# DATE: 10/04/2025
+# BRIEF DESCRIPTION:  convert
 
 
 
@@ -15,7 +15,22 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+print("===== Temperature Converter =====\n")
+print("  1. Convert from Celsius to Fahrenheit")
+print("  2. Convert from Fahrenheit to Celsius\n")
 
+choice = input("Please choose from the above menu: ")
+
+if choice == "1":
+    temp = float(input("Enter a temperature to convert: "))
+    converted = (temp * 9/5) + 32
+    print(f"\n{temp} degrees Celsius is {converted} degrees Fahrenheit.")
+elif choice == "2":
+    temp = float(input("Enter a temperature to convert: "))
+    converted = (temp - 32) * 5/9
+    print(f"\n{temp} degrees Fahrenheit is {converted} degrees Celsius.")
+else:
+    print("\nInvalid choice.")
 
 
 
@@ -92,6 +107,8 @@ Enter a temperature to convert: -40
 '''
 
 1. What is one lesson you learned in this lab?
+
+it will error out if you do not have an else at the end after elif ..I was struggling with forgetting the elif and trying just if and else 
 
 
 
